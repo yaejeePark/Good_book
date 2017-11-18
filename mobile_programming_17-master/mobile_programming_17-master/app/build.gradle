@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "org.androidtown.goodbook"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionName '6.0'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 6
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        flavor {
+            minSdkVersion 15
+            targetSdkVersion 21
+        }
+        flavor1 {
+            minSdkVersion 15
+            targetSdkVersion 21
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: "sonar-runner"
+
+sonarRunner {
+    sonarProperties {
+        property "sonar.host.url", "http://localhost:9000/sonar"
+        property "sonar.jdbc.url", "jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8"
+        property "sonar.jdbc.username", "sonar"
+        property "sonar.jdbc.password", "sonar"
+        property "sonar.login", "admin"
+        property "sonar.password", "admin"
+        property "sonar.projectKey", "Sonar:Test"
+        property "sonar.projectName", "MyCalendar"
+        property "sonar.projectVersion", "1.0"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.language", "java"
+        property "sonar.sources", "src/main/java"
+        property "sonar.profile", "Sonar way"
+    }
+}

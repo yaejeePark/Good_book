@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:stretchColumns="*">
+
+
+        <!-- 읽은 횟수 -->
+        <TableRow android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tvTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Times"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/etTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:gravity="center"
+                android:hint="times"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+
+        </TableRow>
+
+        <!-- 페이지 수정 -->
+        <TableRow android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pages"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etCurPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="pages"
+                android:inputType="number"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="/"
+                android:hint="pages"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etTotPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="total"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <!-- 장르 수정 -->
+        <TableRow android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Genre"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:id="@+id/spGenreList"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center">
+
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/tvGenreShow"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="genre"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <!-- 책 삭제 -->
+        <TableRow android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Delete"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:gravity="center"
+                android:hint="'삭제'를 입력하시면 책이 삭제됩니다"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow android:paddingTop="40dp">
+
+            <Button
+                android:id="@+id/btnSave2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:textColor="@color/colorAccent"
+
+                android:text="저장" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

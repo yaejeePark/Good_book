@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90AB76</color>
+    <color name="colorPrimaryDark">#B2BCA9</color>
+    <color name="colorFab">#F0C0C0</color>
+    <color name="colorChecked">#FFEEA1</color>
+    <color name="colorAccent">#90AB76</color>
+    <color name="mAlpaWhite">#80ffffff</color>
+
+
+</resources>

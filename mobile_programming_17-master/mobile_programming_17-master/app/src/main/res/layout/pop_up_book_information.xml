@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <!--android:layout_width="250dp"-->
+
+    <ImageView
+        android:layout_width="90sp"
+        android:layout_height="140sp"
+        android:id="@+id/book_img"
+        android:layout_columnSpan="4"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@+id/book_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <!--android:weightSum="5"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Title: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Page: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/page"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Type page number"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Genre: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+            <!--<View-->
+            <!--android:layout_height="4px"-->
+            <!--android:background="#FF00FF" />-->
+
+            <Spinner
+                android:id="@+id/spinnerExample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/popup_genre" />
+            <!--android:prompt="@string/popup_genre"-->
+            <!--android:textColor="@color/colorPrimary"-->
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff0000"
+        android:textColor="@color/colorPrimary"
+        android:text="등록"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tableLayout"
+
+        android:layout_alignLeft="@+id/book_img"
+        android:layout_alignStart="@+id/book_img"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="취소"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp"
+
+        android:layout_alignBaseline="@+id/btnok"
+        android:layout_alignBottom="@+id/btnok"
+        android:layout_alignRight="@+id/book_img"
+        android:layout_alignEnd="@+id/book_img" />
+    <!--android:layout_alignBaseline="@+id/btnno"-->
+    <!--android:layout_alignBottom="@+id/btnno"-->
+</RelativeLayout>

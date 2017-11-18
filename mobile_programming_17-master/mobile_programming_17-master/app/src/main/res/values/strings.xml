@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">GOOD BOOK</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="strarray_mobile_network_types">
+        <item> 소설 </item>
+        <item> 시/에세이 </item>
+        <item> 인문 </item>
+        <item> 가정/생활/요리 </item>
+        <item> 건강 </item>
+        <item> 취미/레저 </item>
+        <item> 경제/경영 </item>
+        <item> 자기계발 </item>
+        <item> 사회 </item>
+        <item> 역사 </item>
+        <item> 문화 </item>
+        <item> 종교 </item>
+        <item> 예술 </item>
+        <item> 대중문화 </item>
+        <item> 학습/참고서 </item>
+        <item> 국어/외국어 </item>
+        <item> 사전 </item>
+        <item> 과학/공학 </item>
+        <item> 취업/수험서 </item>
+        <item> 여행/지도 </item>
+        <item> 컴퓨터/IT </item>
+        <item> 잡지 </item>
+        <item> 청소년 </item>
+        <item> 유아 </item>
+        <item> 어린이 </item>
+        <item> 만화 </item>
+        <item> 해외도서 </item>
+    </string-array>
+    <string name="popup_genre">장르를 선택해주세요.</string>
+    <string-array name="tree_types">
+        <item>기본나무</item>
+        <item>단풍나무</item>
+        <item>사과나무</item>
+        <item>오렌지나무</item>
+        <item>포도나무</item>
+    </string-array>
+    <string name="popup_tree">나무 선택</string>
+
+
+</resources>

@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		tools:context=".MypageAnalysis">
+
+		<TextView
+			android:id="@+id/textTitle"
+			android:text="GOOD BOOK이 생각하는 당신은\n"
+			android:textSize="16sp"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/colorPrimaryDark"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:id="@+id/textView"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:layout_below="@+id/textTitle"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/colorPrimary"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<View
+			android:id="@+id/v1"
+			android:layout_below="@+id/textView"
+			android:layout_height="2dp"
+			android:layout_width="180dp"
+			/>
+		<!--</LinearLayout>-->
+		<!-- 원형 그래프 -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/v1"
+			>
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="36dp"
+				android:layout_height="20dp"
+				app:srcCompat="@drawable/intro_book_copy"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true" />
+			<TextView
+				android:id="@+id/genre"
+				android:text="당신이 좋아하는 장르는\n"
+				android:textSize="16sp"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_toRightOf="@+id/imageView"
+				android:layout_toEndOf="@+id/imageView" />
+		</RelativeLayout>
+		<!--            android:layout_gravity="center_horizontal"
+          -->
+		<LinearLayout
+			android:layout_below="@+id/genre"
+			android:id="@+id/layoutGraphView"
+			android:layout_width="320dp"
+			android:layout_height="480dp"
+			android:orientation="horizontal"
+			android:backgroundTint="@color/mAlpaWhite">
+		</LinearLayout>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="개인정보 보호 방침"
+			android:textSize="10sp"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@+id/textView4"
+			android:layout_toEndOf="@+id/textView4"
+			android:id="@+id/btnPersonal"/>
+
+		<!-- 바 그래프 -->
+		<!--<TextView-->
+		<!--android:layout_below="@+id/layoutGraphView"-->
+		<!--android:text="\n\n\n"-->
+		<!--android:textSize="16sp"-->
+		<!--android:id="@+id/te"-->
+		<!--android:layout_gravity="center_horizontal"-->
+		<!--android:textColor="@color/colorPrimaryDark"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content" />-->
+		<!--<RelativeLayout-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="match_parent"-->
+		<!--android:layout_below="@+id/te"-->
+		<!--&gt;-->
+		<!--<ImageView-->
+		<!--android:layout_toLeftOf="@+id/page"-->
+		<!--android:layout_width="45dp"-->
+		<!--android:layout_height="36dp"-->
+		<!--app:srcCompat="@drawable/intro_book" />-->
+
+		<!--<TextView-->
+		<!--android:id="@+id/page"-->
+		<!--android:text="당신의 월별 목표 페이지 도달 상태는\n\n"-->
+		<!--android:textSize="16sp"-->
+		<!--android:layout_gravity="center_horizontal"-->
+		<!--android:textColor="@color/colorPrimaryDark"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content" />-->
+		<!--</RelativeLayout>-->
+		<!--<LinearLayout-->
+		<!--android:id="@+id/layoutGraphView2"-->
+		<!--android:layout_width="320dp"-->
+		<!--android:layout_height="480dp"-->
+		<!--android:layout_below="@+id/page"-->
+		<!--android:orientation="vertical"-->
+		<!--android:backgroundTint="@color/mAlpaWhite">-->
+
+		<!--</LinearLayout>-->
+
+	</LinearLayout>
+	<!---->
+</ScrollView>
